@@ -83,10 +83,31 @@ $google_faq = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Google Faq</title>
 </head>
 
 <body>
+    <header class="border ">
+        <nav class="container-fluid">
+            <div class="p-3 d-flex">
+                <figure class="pt-2">
+                    <img src="./img/logo-google.svg" alt="Logo Google">
+                </figure>
+                <a href="#" class="privacy">Privacy e termini</a>
+            </div>
+            <div>
+                <ul class="d-flex">
+                    <li class="pe-5 "><a href="#">Introduzione</a></li>
+                    <li class="pe-5 "><a href="#">Norme sulla Privacy</a></li>
+                    <li class="pe-5 "><a href="#">Termini di Servizio</a></li>
+                    <li class="pe-5 "><a href="#">Tecnologie</a></li>
+                    <li class="pe-5 "><a href="#" class="active">Domande Frequenti</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main class="container">
         <?php foreach ($google_faq as $question => $texts) : ?>
             <h3><?php echo $texts['question'] ?></h3>
@@ -95,11 +116,6 @@ $google_faq = [
             <?php endforeach; ?>
         <?php endforeach; ?>
     </main>
-
-
-
-
-
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+a.privacy {
+    font-size: 25px;
+    color: gray;
+}
+
+.d-flex li {
+    list-style-type: none;
+}
+
+a.active {
+    color: dodgerblue;
+    border-bottom: 3px solid dodgerblue;
+    padding-bottom: 18px;
+}
+
+li a {
+    color: gray;
+}
+
+.border {
+    border-bottom: 2px solid gray;
+    margin-bottom: 50px;
+}
